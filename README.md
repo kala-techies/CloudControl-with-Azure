@@ -173,5 +173,3 @@ To maintain clean history and collaboration standards, follow [Conventional Comm
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CODEOFCONDUCT.md)
-
-```
