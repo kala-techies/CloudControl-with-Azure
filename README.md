@@ -136,32 +136,32 @@ cd CloudControl-with-Azure
 
 ## ✅ Commit Guidelines
 
-To maintain clean history and collaboration standards, follow [Conventional Commits](https://www.conventionalcommits.org/):
+To maintain a clean and meaningful commit history, follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```
-<type>: <brief summary>
+type: short summary of your change
 ```
 
-### Common Types:
+### Common Types
 
-* `feat`: New feature (e.g. `feat: add VM creation script`)
-* `fix`: Bug fix (e.g. `fix: correct subnet range in VNet`)
-* `docs`: Documentation changes (e.g. `docs: update README links`)
+* `feat`: New feature (e.g., `feat: add VM creation script`)
+* `fix`: Bug fix (e.g., `fix: correct subnet range in VNet`)
+* `docs`: Documentation changes (e.g., `docs: update README links`)
 * `style`: Code formatting, no logic change
 * `refactor`: Code refactoring
-* `test`: Add or fix tests
-* `chore`: Maintenance, CI/CD, config
+* `test`: Add or update tests
+* `chore`: Maintenance tasks (e.g., dependencies, configs)
 
 > ✅ Examples:
 > `feat: add Phase 2 VNet peering lab`
-> `docs: link to CODEOFCONDUCT and CONTRIBUTING files`
+> `docs: fix CONTRIBUTIONS.md link`
 
 ---
 
 ## 🤝 Contributing & Community
 
-* Want to contribute? Please read the [CONTRIBUTING.md](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CONTRIBUTING.md)
-* Be respectful. See our [CODE OF CONDUCT](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CODEOFCONDUCT.md)
+* Want to contribute? Please read the [CONTRIBUTIONS.md](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CONTRIBUTIONS.md)
+* Be respectful. See our [CODEOFCONDUCT.md](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CODEOFCONDUCT.md)
 
 ---
 
@@ -173,3 +173,5 @@ To maintain clean history and collaboration standards, follow [Conventional Comm
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CODEOFCONDUCT.md)
+
+```
