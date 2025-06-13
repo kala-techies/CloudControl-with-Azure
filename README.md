@@ -1,8 +1,3 @@
-Here’s your **cleaned-up and corrected** `README.md` file. I fixed typos, grammar, and structure for better readability and professionalism. You can now copy and paste it directly:
-
----
-
-````markdown
 # 🚀 CloudControl with Azure
 
 **Master Azure Administration from the ground up — no prior cloud experience required!**
