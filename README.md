@@ -175,5 +175,3 @@ To keep the commit history clean and meaningful, follow this format:
 [![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/CODEOFCONDUCT.md)
 
 ```
-
----
