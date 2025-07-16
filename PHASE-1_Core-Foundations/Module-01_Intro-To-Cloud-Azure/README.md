@@ -2,6 +2,30 @@
 
 ---
 
+## 📚 Quick Links – Module 1 Contents
+
+- 🔹 [What is Cloud Computing?](#️what-is-cloud-computing)
+- 🔹 [📱 A Simple Analogy: Your Mobile Phone](#️a-simple-analogy-your-mobile-phone)
+- 🔹 [🏢 Before Cloud Computing: The Traditional Way](#️before-cloud-computing-the-traditional-way)
+- 🔹 [☁️ Enter Cloud Computing](#️enter-cloud-computing)
+- 🔹 [✅ Benefits of Cloud Computing](#️benefits-of-cloud-computing)
+- 🔹 [💡 A Layman Example: Hosting a Website](#️a-layman-example-hosting-a-website)
+- 🔹 [🏷️ Major Public Cloud Providers](#️major-public-cloud-providers)
+- 🔹 [🌍 Azure Global Infrastructure](#️azure-global-infrastructure)
+- 🔹 [🧱 Key Components of Azure Infrastructure](#️key-components-of-azure-infrastructure)
+- 🔹 [🌐 Network Reach](#️network-reach)
+- 🔹 [✅ Benefits of Azure's Infrastructure](#️benefits-of-azures-infrastructure)
+- 🔹 [🧰 Overview of Azure Services](#️overview-of-azure-services)
+- 🔹 [🔹 Compute Services](#️1-compute-services)
+- 🔹 [🔹 Networking](#️2-networking)
+- 🔹 [🔹 Storage & Databases](#️3-storage--databases)
+- 🔹 [🔹 Security & Identity](#️4-security--identity)
+- 🔹 [🔹 Monitoring & Management](#️5-monitoring--management)
+- 🔹 [🧠 Real-World Analogy](#️real-world-analogy)
+- 🔹 [📌 Summary](#️summary)
+
+---
+
 ## 🌥️ What is Cloud Computing?
 
 Before diving into cloud computing, let’s first understand how applications were traditionally hosted and accessed. Think about websites and services we use daily, like:
