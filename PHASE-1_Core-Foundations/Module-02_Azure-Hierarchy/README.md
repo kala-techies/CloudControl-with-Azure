@@ -1,11 +1,6 @@
-
 ##  Module 2: Azure Hierarchy
 
 ### 🛠️ Skills: Azure structure & management layers
-
-* 4. **Cloud Physical Architecture**
-* 5. **Subscriptions, Management Groups & Resource Groups**
-
 ---
 
 ### 🌐 Cloud Physical Architecture
@@ -13,15 +8,27 @@
 Typically, cloud architecture is organized in this hierarchy:
 `Regions → Availability Zones → Data Centers → Racks → Servers → Special OS → Operating Systems (VMs)`
 
+![Zones and Availability Zones](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/PHASE-1_Core-Foundations/Module-02_Azure-Hierarchy/images/01_PhysicalHierarchy_Zones%26AvailabilityZone.png?raw=true)
+
 * A **Region** is a geographic area — not necessarily a country, but a specific physical location like *East US*.
 * Within a region, there are **Availability Zones (AZs)**. Think of AZs as isolated locations within the region to ensure high availability.
 * Each AZ contains **data centers**, but as cloud consumers, we only get visibility up to AZ level — the details of data centers are abstracted.
 * A **Data Center** contains:
 
-  * **Racks**, which hold
-  * **Servers (Bare Metal Machines)**, which run
-  * A **Hypervisor / Special OS**, which hosts
+  * **Racks**, which hold  
+  * **Servers (Bare Metal Machines)**, which run  
+  * A **Hypervisor / Special OS**, which hosts  
   * **Virtual Machines (VMs)** that we use.
+
+---
+
+![Data Center to Server](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/PHASE-1_Core-Foundations/Module-02_Azure-Hierarchy/images/02_DataCenters_Racks_PhysicalServer.png?raw=true)
+
+---
+
+![Server to Hypervisor to Guest OS](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/PHASE-1_Core-Foundations/Module-02_Azure-Hierarchy/images/03_PhysicalServer_HyperVisor_OS.png?raw=true)
+
+---
 
 #### 👪 Real-life Analogy: Family System
 
