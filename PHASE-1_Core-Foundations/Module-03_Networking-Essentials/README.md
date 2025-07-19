@@ -1,5 +1,4 @@
-
-#  Module 3: Networking Essentials
+# Module 3: Networking Essentials
 
 🛠️ **Skills**: Build and understand virtual networks
 
@@ -7,7 +6,7 @@
 
 ## 6. IPv4 & Subnetting Basics
 
-Understanding IP addressing is one of the most **core and fundamental concepts of networking**. There are two main types of IP addresses: **IPv4 and IPv6**. In this module, we’ll deep dive into **IPv4**.
+Understanding IP addressing is one of the **core and fundamental concepts of networking**. There are two main types of IP addresses: **IPv4 and IPv6**. In this module, we’ll deep dive into **IPv4**.
 
 ### IPv4 Public Classes (Before Private IPs Were Introduced)
 
@@ -18,6 +17,7 @@ Understanding IP addressing is one of the most **core and fundamental concepts o
 - **Class E**: `240.0.0.0` to `255.255.255.255` *(Experimental)*
 
 IPv4 addresses consist of **4 octets (8 bits each)**. For example:
+
 ```
 
 0.0.0.0 = 8 bits \* 4 = 32-bit address (/32)
@@ -53,17 +53,19 @@ Despite multiple devices, all traffic **goes through one public IP** using **NAT
 
 ### 🖼️ SNAT Visual Representation
 
-![Source NAT (SNAT)](../assets/module3/01_SNAT.png)
+![Source NAT (SNAT)](https://github.com/kala-techies/CloudControl-with-Azure/blob/main/PHASE-1_Core-Foundations/Module-03_Networking-Essentials/images/01_SNAT.png)
 
 ---
 
 ## IPv4 Private IP Address Ranges
 
+These are reserved for internal use within LANs or cloud networks:
+
 * **Class A**: `10.0.0.0` to `10.255.255.255`
 * **Class B**: `172.16.0.0` to `172.31.255.255`
 * **Class C**: `192.168.0.0` to `192.168.255.255`
 
-These ranges are not routable over the public internet — they stay inside internal networks.
+These ranges are **not routable on the public internet** — they’re used for internal communications only.
 
 ---
 
@@ -85,7 +87,7 @@ CIDR Notation (e.g. `/8`, `/16`, `/24`) defines how many **usable IPs** you have
 
   * `10.0.0` is fixed. Only last octet varies.
 
-> Calculation: For every bit you “fix” in the subnet mask, you reduce the number of IPs by half.
+> 📌 For every bit you “fix” in the subnet mask, you reduce the number of IPs by half.
 
 ### Bit Binary Cheatsheet:
 
@@ -100,19 +102,25 @@ CIDR Notation (e.g. `/8`, `/16`, `/24`) defines how many **usable IPs** you have
 
 ## 7. Create Virtual Networks (VNets)
 
-Azure VNet is a **logical isolation of the cloud network**, just like a physical network in your datacenter.
+An **Azure VNet** is a **logical isolation of your cloud network**, just like a physical network in your on-premises datacenter.
 
-* You define your IP range.
-* Divide it into subnets.
-* Deploy resources inside those subnets.
+* You define the IP range (CIDR block).
+* Divide that range into **subnets**.
+* Deploy **resources** like VMs, DBs, etc. inside these subnets.
 
-VNets can **connect with each other** via Peering, or with on-premises environments using VPNs/ExpressRoute.
+💡 VNets can **connect** with each other via **VNet Peering** or with **on-premises networks** via **VPN** or **ExpressRoute**.
 
 ---
 
 ## 8. Public vs. Private Subnets
 
-* **Public Subnet**: Can access the internet (via NAT Gateway or Public IP)
-* **Private Subnet**: Cannot access internet directly (used for DBs, internal apps)
+| Type        | Access                                            | Use Case                             |
+| ----------- | ------------------------------------------------- | ------------------------------------ |
+| **Public**  | Internet-accessible (via NAT Gateway / Public IP) | Frontend web servers, Load Balancers |
+| **Private** | No direct internet access                         | Databases, Internal APIs             |
 
-Use NSG (Network Security Group), Route Tables, and NAT to control traffic.
+To control traffic:
+
+* Use **NSGs (Network Security Groups)** for port-level filtering
+* Use **Route Tables** to override default paths
+* Use **NAT Gateways** for secure outbound traffic from private subnets
