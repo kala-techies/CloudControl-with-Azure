@@ -1,4 +1,3 @@
-
 #  Azure Networking: hub-Vnet with Public Subnets
 
 This guide helps you quickly spin up a virtual network `hub-Vnet` with three **public subnets** using **Azure CLI**. Ideal for use directly from [Azure Cloud Shell](https://shell.azure.com/) or your local terminal (with CLI installed).
